@@ -5,18 +5,19 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 
-import com.moringaschool.expman.fragments.CategoryEditFragment;
+import com.moringaschool.expman.R;
+import com.moringaschool.expman.fragments.SettingsFragment;
 
+public class SettingsActivity extends BaseFragmentActivity {
 
-public class CategoryEditActivity extends BaseFragmentActivity {
-
-    /* Important: use onCreate(Bundle savedInstanceState)
-     * instead of onCreate(Bundle savedInstanceState, PersistableBundle persistentState) */
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        insertFragment(new CategoryEditFragment());
+        insertFragment(new SettingsFragment());
+
+        setTitle(R.string.nav_settings);
+
         setupActionBar();
     }
 

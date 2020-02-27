@@ -5,10 +5,10 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 
-import com.moringaschool.expman.fragments.CategoryEditFragment;
+import com.moringaschool.expman.fragments.ExpenseEditFragment;
 
 
-public class CategoryEditActivity extends BaseFragmentActivity {
+public class ExpenseEditActivity extends BaseFragmentActivity {
 
     /* Important: use onCreate(Bundle savedInstanceState)
      * instead of onCreate(Bundle savedInstanceState, PersistableBundle persistentState) */
@@ -16,7 +16,7 @@ public class CategoryEditActivity extends BaseFragmentActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        insertFragment(new CategoryEditFragment());
+        insertFragment(new ExpenseEditFragment());
         setupActionBar();
     }
 
