@@ -1,8 +1,10 @@
-package com.moringaschool.expman;
+package com.moringaschool.expman.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.moringaschool.expman.R;
 
 public class MainActivity extends AppCompatActivity {
 
